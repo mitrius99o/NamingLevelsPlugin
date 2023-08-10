@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Co.NamingLevelsPlugin.Contracts\Co.NamingLevelsPlugin.Contracts.csproj" />
+    <ProjectReference Include="..\Co.NamingLevelsPlugin.RevitServices\Co.NamingLevelsPlugin.RevitServices.csproj" />
+    <ProjectReference Include="..\Co.NamingLevelsPlugin.ViewModels\Co.NamingLevelsPlugin.ViewModels.csproj" />
+    <ProjectReference Include="..\Co.NamingLevelsPlugin.Views\Co.NamingLevelsPlugin.Views.csproj" />
+  </ItemGroup>
+
+</Project>

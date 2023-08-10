@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application</Name>
+    <Assembly>Co.NamingLevelsPlugin.RevitApp\Co.NamingLevelsPlugin.RevitApp.dll</Assembly>
+    <ClientId>08060eaf-580b-4828-b677-f8514eb5bf1b</ClientId>
+    <FullClassName>Co.NamingLevelsPlugin.RevitApp.Application</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

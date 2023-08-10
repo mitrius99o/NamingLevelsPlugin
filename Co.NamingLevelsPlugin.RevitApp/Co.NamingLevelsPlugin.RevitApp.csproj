@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\icons\change_levels.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2020.2.1.2001" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icons\change_levels.png" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if exist &quot;$(ProgramData)\Autodesk\Revit\Addins\2020\Co.NamingLevelsPlugin.RevitApp&quot; copy &quot;$(ProjectDir)$(OutputPath)*.dll&quot; &quot;$(ProgramData)\Autodesk\Revit\Addins\2020\Co.NamingLevelsPlugin.RevitApp&quot;" />
+  </Target>
+
+</Project>

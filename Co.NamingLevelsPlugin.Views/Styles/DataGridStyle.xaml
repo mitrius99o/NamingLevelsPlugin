@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="DataGridViewStyle" TargetType="DataGrid">
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="HeadersVisibility" Value="Column"/>
+        <Setter Property="GridLinesVisibility" Value="None"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="CanUserAddRows" Value="False"/>
+        <Setter Property="CanUserReorderColumns" Value="False"/>
+        <Setter Property="CanUserResizeRows" Value="False"/>
+        <Setter Property="CanUserResizeColumns" Value="False"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Background" Value="White"/>
+    </Style>
+    <Style x:Key="BaseDataGridColumnHeader" TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Padding" Value="0,5"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="LastDataGridColumnHeader" TargetType="DataGridColumnHeader" BasedOn="{StaticResource BaseDataGridColumnHeader}">
+        <Setter Property="BorderThickness" Value="1, 0, 1, 1"/>
+    </Style>
+    <Style x:Key="BaseDataGridCell" TargetType="DataGridCell">
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+    </Style>
+    <Style TargetType="DataGridRow">
+        <Style.Setters>
+            <Setter Property="Height" Value="25"/>
+        </Style.Setters>
+    </Style>
+    <Style x:Key="LastColumnCells" TargetType="DataGridCell" BasedOn="{StaticResource BaseDataGridCell}">
+        <Setter Property="BorderThickness" Value="1, 0, 1, 0"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+    </Style>
+</ResourceDictionary>

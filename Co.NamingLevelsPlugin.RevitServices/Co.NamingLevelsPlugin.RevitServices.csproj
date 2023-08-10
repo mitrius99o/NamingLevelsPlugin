@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2020.2.1.2001" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Co.NamingLevelsPlugin.Contracts\Co.NamingLevelsPlugin.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
